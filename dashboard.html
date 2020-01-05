@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <title>Star Wars</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="row no-gutters heading">
+            <div class="col heading-text">
+                <h1>STAR WARS DASHBOARD</h1>
+            </div>
+
+        </div>
+    </header>
+
+    <section class=" main">
+
+        <div class="row radios">
+            <div class="col-5">
+                <div class="row">
+                    <legend id="radios-legend">Choose your film and then draw the graph</legend>
+                    <label class="radio-inline"><input type="radio" name="films" value="4" id="myRadio1" checked>Episode I - The Phantom Menace</label><br>
+                    <label class="radio-inline"><input type="radio" name="films" value="5" id="myRadio2">Episode II - Attack of the Clones</label><br>
+                    <label class="radio-inline"><input type="radio" name="films" value="6" id="myRadio3">Episode III - Revenge of the Sith</label><br>
+                    <label class="radio-inline"><input type="radio" name="films" value="1" id="myRadio4">Episode IV - A New Hope</label><br>
+                    <label class="radio-inline"><input type="radio" name="films" value="2" id="myRadio5">Episode V - Return of the Jedi</label><br>
+                    <label class="radio-inline"><input type="radio" name="films" value="3" id="myRadio6">Episode VI - The Empire Strikes Back</label><br>
+                    <label class="radio-inline"><input type="radio" name="films" value="7" id="myRadio7">Episode VII - The Force Awakens</label><br>
+                    <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="row buttons">-->
+                    <!--<div class="buttons">-->
+                    <!--<div class="col btn-group" role="group">-->
+                    <button type="button" class="btn btn-secondary draw-button" onclick="dataSelection('people')">Draw Graph</button>
+                    <!--<button type="button" class="btn btn-warning" onclick="dataSelection('species')">Species</button>-->
+                    <!--<button type="button" class="btn btn-warning" onclick="dataSelection('starships')">Starship</button>-->
+                    <!--<button type="button" class="btn btn-warning" onclick="dataSelection('vehicles')">Vehicles</button>-->
+                </div>
+                <div class="row">
+                    <a href="index.html" type="button" class="btn btn-secondary back-button">Back Home <i class="fas fa-reply"></i></a>
+
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-5" id="draw-here">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--<footer>-->
+    <!--    <div class="row footer">-->
+    <!--        <div class="col">-->
+
+    <!--        </div>-->
+
+    <!--    </div>-->
+    <!--</footer>-->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!--<script src="d3.legend.js"></script>-->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* *********************************************** Scrollbar     */
+
+/* width */
+/*::-webkit-scrollbar {*/
+/*  width: 7px;*/
+/*}*/
+
+/* Track */
+/*::-webkit-scrollbar-track {*/
+/*  background: #f1f1f1;*/
+/*}*/
+
+/* Handle */
+/*::-webkit-scrollbar-thumb {*/
+/*  background: #888;*/
+/*}*/
+
+/* Handle on hover */
+/*::-webkit-scrollbar-thumb:hover {*/
+/*  background: #555;*/
+/*}*/
+
+/* *********************************************** /Scrollbar     */
+
+/* *********************************************** Main Section     */
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+}
+
+
+.btn {
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    border: none;
+    /*border-width: 1px;*/
+    /*border-color: #000;*/
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.buttons {
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Holtwood One SC', serif;
+    font-size: 4.5em;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+h2 {
+    color: #3182bd;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 3em;
+    padding-bottom: 40px;
+}
+
+label {
+    font-family: 'Poppins', serif;
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    /*margin-left: 15%;*/
+    /*margin-right: 10%;*/
+    /*margin-top: 50px;*/
+}
+
+.entry-button {
+    margin-top: 40px;
+}
+
+.heading {
+    height: 25vh;
+    width: 100vw;
+    background-color: #000;
+    color: #fcd303;
+    position: relative;
+    /*background: radial-gradient (ellipse at center, #fff 0%, #cddcf2 100%);*/
+}
+.heading-text {
+    /*margin: 0;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);*/
+}
+/*.sub-header {*/
+/*    color: turquoise;*/
+/*    margin-top: 40px;*/
+/*    margin-bottom: 40px;*/
+/*}*/
+
+.main {
+    height: 70vh;
+    background-color: #000;
+    color: yellow;
+    overflow: hidden;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 400px;
+  perspective: 400px;
+  color: #feda4a;
+  background-color: #000;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 400%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  text-align: justify;
+}
+.crawl {
+  position: relative;
+  /*top: -100px;*/
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 40s linear;
+}
+
+.crawl p {
+    font-size: 2em;
+    line-height: 50px;
+    color: yellow;
+    line-height: 150%;
+    z-index: 1;
+}
+
+@keyframes crawl {
+  0% {
+
+    top: 0;
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+
+.middle {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.radios {
+    padding: 20px 80px 10px 80px;
+}
+
+input {
+    margin: 10px;
+}
+
+/* *********************************************** /Main Section     */
+
+.back-button {
+    width: 150px;
+}
+
+.draw-button {
+    width: 500px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.galaxy-button {
+    width: 100%;
+}
+
+footer {
+    height: 150px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+p {
+    color: #000;
+}
+
+table {
+    color: #fff;
+}
+
+
+.arc path {
+  stroke: #fff;
+}
+
+#draw-here {
+    padding: 20px 40px 20px 40px;
+}
+
+#radios-legend {
+    color: #3182bd;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.radio-inline {
+    color: #9ecae1;
+}
+
+
+.svg:text {
+    text-transform: uppercase;
+}
+
+/* ******************************************************************* */
+
