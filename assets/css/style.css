@@ -45,23 +45,25 @@ body {
     border-radius: 3px;
     margin-top: 20px;
 }
+
 .buttons {
     padding: 20px;
 }
 
 h1 {
     font-family: 'Holtwood One SC', serif;
-    font-size: 4.5em;
-    margin-left: 15%;
-    margin-right: 10%;
-    margin-top: 50px;
+    font-size: 6vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
+
 h2 {
     color: #3182bd;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    /*margin-top: 40px;*/
+    /*margin-bottom: 40px;*/
     font-size: 3em;
-    padding-bottom: 40px;
+    /*padding-bottom: 40px;*/
 }
 
 label {
@@ -79,26 +81,20 @@ label {
 }
 
 .heading {
-    height: 25vh;
+    height: 20vh;
     width: 100vw;
     background-color: #000;
     color: #fcd303;
     position: relative;
+    
+    /*padding: 20px;*/
     /*background: radial-gradient (ellipse at center, #fff 0%, #cddcf2 100%);*/
 }
+
 .heading-text {
-    /*margin: 0;*/
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*-ms-transform: translate(-50%, -50%);*/
-    /*transform: translate(-50%, -50%);*/
+    margin: auto;
+    text-align: center;
 }
-/*.sub-header {*/
-/*    color: turquoise;*/
-/*    margin-top: 40px;*/
-/*    margin-bottom: 40px;*/
-/*}*/
 
 .main {
     height: 70vh;
@@ -174,8 +170,6 @@ input {
     margin: 10px;
 }
 
-/* *********************************************** /Main Section     */
-
 .back-button {
     width: 150px;
 }
@@ -226,5 +220,6 @@ table {
     text-transform: uppercase;
 }
 
-/* ******************************************************************* */
+
+/* *********************************************** /Main Section     */
 
