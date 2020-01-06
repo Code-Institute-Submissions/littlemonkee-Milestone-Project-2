@@ -4,23 +4,35 @@
 /* *********************************************** Scrollbar     */
 
 /* width */
+
 /*::-webkit-scrollbar {*/
+
 /*  width: 7px;*/
+
 /*}*/
 
 /* Track */
+
 /*::-webkit-scrollbar-track {*/
+
 /*  background: #f1f1f1;*/
+
 /*}*/
 
 /* Handle */
+
 /*::-webkit-scrollbar-thumb {*/
+
 /*  background: #888;*/
+
 /*}*/
 
 /* Handle on hover */
+
 /*::-webkit-scrollbar-thumb:hover {*/
+
 /*  background: #555;*/
+
 /*}*/
 
 /* *********************************************** /Scrollbar     */
@@ -68,7 +80,7 @@ h2 {
 
 label {
     font-family: 'Poppins', serif;
-    font-size: 1.5em;
+    /*font-size: 1.5em;*/
     color: white;
     text-transform: uppercase;
     /*margin-left: 15%;*/
@@ -86,7 +98,7 @@ label {
     background-color: #000;
     color: #fcd303;
     position: relative;
-    
+
     /*padding: 20px;*/
     /*background: radial-gradient (ellipse at center, #fff 0%, #cddcf2 100%);*/
 }
@@ -97,33 +109,42 @@ label {
 }
 
 .main {
-    height: 70vh;
+    height: 80vh;
     background-color: #000;
     color: yellow;
     overflow: hidden;
 }
 
-.star-wars {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 400px;
-  perspective: 400px;
-  color: #feda4a;
-  background-color: #000;
-  font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 400%;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 150%;
-  text-align: justify;
+.main-dashboard {
+    height: 80vh;
+    background-color: #000;
+    color: yellow;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
+
+.star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 400px;
+    perspective: 400px;
+    color: #feda4a;
+    background-color: #000;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 400%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    text-align: justify;
+}
+
 .crawl {
-  position: relative;
-  /*top: -100px;*/
-  top: 9999px;
-  transform-origin: 50% 100%;
-  animation: crawl 40s linear;
+    position: relative;
+    /*top: -100px;*/
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: crawl 40s linear;
 }
 
 .crawl p {
@@ -135,24 +156,24 @@ label {
 }
 
 @keyframes crawl {
-  0% {
+    0% {
 
-    top: 0;
-    transform: rotateX(20deg) translateZ(0);
-  }
-  100% { 
-    top: -6000px;
-    transform: rotateX(25deg) translateZ(-2500px);
-  }
+        top: 0;
+        transform: rotateX(20deg) translateZ(0);
+    }
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
 }
 
 .fade {
-  position: relative;
-  width: 100%;
-  min-height: 60vh;
-  top: -25px;
-  background-image: linear-gradient(0deg, transparent, black 75%);
-  z-index: 1;
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
 }
 
 
@@ -162,8 +183,10 @@ label {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .radios {
-    padding: 20px 80px 10px 80px;
+    padding: 20px 50px 10px 50px;
+    margin-bottom: 20px;
 }
 
 input {
@@ -171,14 +194,15 @@ input {
 }
 
 .back-button {
-    width: 150px;
+    /*width: 150px;*/
 }
 
 .draw-button {
-    width: 500px;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    /*width: 500px;*/
+    /*margin-bottom: 20px;*/
+    /*margin-top: 30px;*/
 }
+
 .galaxy-button {
     width: 100%;
 }
@@ -199,20 +223,25 @@ table {
 
 
 .arc path {
-  stroke: #fff;
+    stroke: #fff;
 }
 
 #draw-here {
-    padding: 20px 40px 20px 40px;
+    padding: 20px;
+    margin-top: 20px;
+    /*margin-left: 20px;*/
 }
 
 #radios-legend {
     color: #3182bd;
     padding-bottom: 20px;
-    font-size: 30px;
+    font-size: 1.5em;
 }
+
 .radio-inline {
     color: #9ecae1;
+    font-size: 16px;
+    /*font-size: 1.5em;*/
 }
 
 
@@ -220,6 +249,83 @@ table {
     text-transform: uppercase;
 }
 
+/* https://stackoverflow.com/questions/16265123/resize-svg-when-window-is-resized-in-d3-js*/
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* aspect ratio */
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.svg-content-responsive {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
 
 /* *********************************************** /Main Section     */
 
+/*------------------------------------------Media Queries */
+
+@media screen and (max-width: 320px) {
+    #radios-legend {
+        font-size: 16px;
+    }
+    .radio-inline {
+        font-size: 14px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 767px) {
+    #radios-legend {
+        font-size: 18px;
+    }
+    .radio-inline {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    #radios-legend {
+        font-size: 20px;
+    }
+    .radio-inline {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #radios-legend {
+        font-size: 22px;
+    }
+    .radio-inline {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    #radios-legend {
+        font-size: 24px;
+    }
+    .radio-inline {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #radios-legend {
+        font-size: 26px;
+    }
+    .radio-inline {
+        font-size: 24px;
+    }
+}

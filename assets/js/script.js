@@ -78,44 +78,12 @@ function dataSelection(type) {
 
 
 
-// function drawGraph() {
-//   d3.select("svg").remove();
-//   var width = 600,
-//     height = 500;
-
-//   // // legend dimensions
-//   // var legendRectSize = 25; // defines the size of the colored squares in legend
-//   // var legendSpacing = 6; // defines spacing between squares
-
-//   var colors = d3.scaleOrdinal(d3.schemePaired);
-//   var svg = d3.select("#draw-here").append("svg")
-//     .attr("width", width).attr("height", height);
-
-//   var details = results1;
-//   console.log(details);
-
-//   var data = d3.pie().sort(null).value(function(d) { return d.number; })(details);
-//   //   console.log(data);
-//   var segments = d3.arc()
-//     .innerRadius(0)
-//     .outerRadius(200)
-//     // .padAngle(.0)
-//     .padRadius(50);
-//   var sections = svg.append("g").attr("transform", "translate(250,250)")
-//     .selectAll("path").data(data);
-//   sections.enter().append("path").attr("d", segments).attr("fill", function(d) { return colors(d.data.number); });
-
-
-// }
-
-
-
 function drawGraph() {
   d3.select("svg").remove();
 
-  var w = 600, //width
-    h = 500, //height
-    r = 225, //radius
+  var w = 400, //width
+    h = 400, //height
+    r = 200, //radius
     color = d3.scale.category20c(); //builtin range of colors
 
   var data = results1;
@@ -127,6 +95,7 @@ function drawGraph() {
     .attr("height", h)
     .append("svg:g")
     .attr("transform", "translate(" + r + "," + r + ")");
+
 
   var arc = d3.arc() //this will create <path> elements for us using arc data
     .innerRadius(0)
