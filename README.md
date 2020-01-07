@@ -50,7 +50,7 @@ During the testing phase, I found and resolved the following issues:
 - The scrolling intro text would scroll over the button above it. I resolved this issue by amending the "fade" class in the css.
 
 ## Deployment
-This site is hosted using GitHub pages, deployed directly from the master branch and located here https://littlemonkee.github.io/ADR-website/. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
+This site is hosted using GitHub pages, deployed directly from the master branch and located here https://littlemonkee.github.io/Milestone-Project-2/. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 I deployed the website by going to my GitHub repository, clicking on settings and going to GitHub Pages. Here I selected the source Master Branch. The site was then hosted on GitHub Pages.
 
 ## Credits
