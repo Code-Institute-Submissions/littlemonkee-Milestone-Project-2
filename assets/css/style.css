@@ -42,7 +42,7 @@
 body {
     height: 100%;
     width: 100%;
-    /*background: #000;*/
+    background: #000;
     overflow: hidden;
 }
 
@@ -52,8 +52,6 @@ body {
     color: black;
     font-weight: bold;
     border: none;
-    /*border-width: 1px;*/
-    /*border-color: #000;*/
     border-radius: 3px;
     margin-top: 20px;
 }
@@ -72,20 +70,13 @@ h1 {
 
 h2 {
     color: #3182bd;
-    /*margin-top: 40px;*/
-    /*margin-bottom: 40px;*/
     font-size: 3em;
-    /*padding-bottom: 40px;*/
 }
 
 label {
     font-family: 'Poppins', serif;
-    /*font-size: 1.5em;*/
     color: white;
     text-transform: uppercase;
-    /*margin-left: 15%;*/
-    /*margin-right: 10%;*/
-    /*margin-top: 50px;*/
 }
 
 .entry-button {
@@ -98,9 +89,6 @@ label {
     background-color: #000;
     color: #fcd303;
     position: relative;
-
-    /*padding: 20px;*/
-    /*background: radial-gradient (ellipse at center, #fff 0%, #cddcf2 100%);*/
 }
 
 .heading-text {
@@ -110,18 +98,25 @@ label {
 
 .main {
     height: 80vh;
-    /*background-color: #000;*/
     color: yellow;
     overflow: hidden;
 }
 
 .main-dashboard {
+    margin-top: 30px;
     height: 80vh;
-    background-color: #000;
     color: yellow;
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+#main-dash-buttons {
+    margin-top: 20px;
+}
+
+/* ******************************************************* Star Wars Crawler Text */
+
+/* https://css-tricks.com/snippets/css/star-wars-crawl-text/ */
 
 .star-wars {
     display: flex;
@@ -176,6 +171,7 @@ label {
     z-index: 1;
 }
 
+/* ******************************************************* Star Wars Crawler Text */
 
 .middle {
     margin-left: 30%;
@@ -185,23 +181,14 @@ label {
 }
 
 .radios {
-    padding: 20px 50px 10px 50px;
+    /*padding: 20px 50px 10px 50px;*/
     margin-bottom: 20px;
     text-align: center;
+    padding-top: 20px;
 }
 
 input {
     margin: 10px;
-}
-
-.back-button {
-    /*width: 150px;*/
-}
-
-.draw-button {
-    /*width: 500px;*/
-    /*margin-bottom: 20px;*/
-    /*margin-top: 30px;*/
 }
 
 .galaxy-button {
@@ -222,15 +209,17 @@ table {
     color: #fff;
 }
 
+.row {
+    margin: 0;
+}
+
 
 .arc path {
     stroke: #fff;
 }
 
 #draw-here {
-    padding: 20px;
-    margin-top: 20px;
-    /*margin-left: 20px;*/
+    padding-top: 50px;
 }
 
 #radios-legend {
@@ -242,7 +231,6 @@ table {
 .radio-inline {
     color: #9ecae1;
     font-size: 16px;
-    /*font-size: 1.5em;*/
 }
 
 
@@ -255,17 +243,13 @@ table {
 .svg-container {
     display: inline-block;
     position: relative;
-    width: 100%;
-    padding-bottom: 100%;
-    /* aspect ratio */
+    /*width: 100%;*/
+    padding-bottom: 10%;
     vertical-align: top;
-    /*overflow: hidden;*/
-    /*margin: auto;*/
+    max-height: 500px;
 }
 
 .svg-content-responsive {
-    /*display: inline-block;*/
-    /*position: absolute;*/
     top: 10px;
     left: 0;
     display: block;
@@ -276,7 +260,7 @@ table {
 
 .svg {
     margin: auto;
-    
+
 }
 
 /* *********************************************** /Main Section     */
@@ -290,27 +274,52 @@ table {
     .radio-inline {
         font-size: 14px;
     }
-
+    .svg-content-responsive {
+        width: 230px;
+        height: 230px;
+    }
 
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400px) and (min-width: 321px) {
     #radios-legend {
         font-size: 18px;
     }
     .radio-inline {
         font-size: 16px;
     }
+    .svg-content-responsive {
+        width: 280px;
+        height: 280px;
+    }
 
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 765px) and (min-width: 401px) {
+    #radios-legend {
+        font-size: 18px;
+    }
+    .radio-inline {
+        font-size: 16px;
+    }
+    .svg-content-responsive {
+        width: 350px;
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
     #radios-legend {
         font-size: 20px;
     }
     .radio-inline {
         font-size: 18px;
+    }
+    .svg-content-responsive {
+        width: 320px;
+        height: 320px;
     }
 }
 
@@ -330,6 +339,9 @@ table {
     }
     .radio-inline {
         font-size: 22px;
+    }
+    #draw-here {
+        padding-top: 20px;
     }
 }
 
