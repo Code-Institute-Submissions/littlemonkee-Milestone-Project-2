@@ -48,7 +48,7 @@ function dataSelection(type) {
 
             var filmNo = film.charAt(film.length - 2);
 
-            if (filmChosen === filmNo) {
+            if (filmChosen === filmNo) {  // IF THE FILM CHOSEN WITH THE RADIO BUTTON MATCHES SOMEONE IN THE DATA, ADD TO VARIABLES
 
               if (obj["gender"] === "male") {
                 male++;
@@ -62,7 +62,7 @@ function dataSelection(type) {
             }
           }
         }
-        results1 = [{ "type": "male", "number": male }, { "type": "female", "number": female }, { "type": "other", "number": other }];
+        results1 = [{ "type": "male", "number": male }, { "type": "female", "number": female }, { "type": "other", "number": other }]; // CREATE RESULTS OBJECT
 
         drawGraph();
       });
@@ -73,7 +73,7 @@ function dataSelection(type) {
 
 
 function drawGraph() {
-  d3.select("svg").remove();
+  d3.select("svg").remove();  // ENSURE NO GRAPH EXISTS WHEN CREATING A NEW GRAPH
 
   var w = 400, //width
     h = 400, //height
@@ -94,6 +94,8 @@ function drawGraph() {
     .append("svg:g")
     .attr("transform", "translate(" + r + "," + r + ")");
 
+
+// http://bl.ocks.org/enjalot/1203641
   var arc = d3.arc() //this will create <path> elements for us using arc data
     .innerRadius(0)
     .outerRadius(r)

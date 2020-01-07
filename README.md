@@ -65,7 +65,7 @@ Data was provided by Swapi[2].
 [1] http://thenewcode.com/744/Make-SVG-Responsive
 [2] Swapi API - https://swapi.co/
 [3] Star Wars scrolling text - https://css-tricks.com/snippets/css/star-wars-crawl-text/ This was shared with me by my mentor Aaron Sinnet.
-
+[4] Creation of my d3.js pie chart was based on the following tutorial - http://bl.ocks.org/enjalot/1203641
 
 ###### This site is for educational use only.
 
