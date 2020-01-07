@@ -42,7 +42,7 @@
 body {
     height: 100%;
     width: 100%;
-    background: #000;
+    /*background: #000;*/
     overflow: hidden;
 }
 
@@ -110,7 +110,7 @@ label {
 
 .main {
     height: 80vh;
-    background-color: #000;
+    /*background-color: #000;*/
     color: yellow;
     overflow: hidden;
 }
@@ -187,6 +187,7 @@ label {
 .radios {
     padding: 20px 50px 10px 50px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 input {
@@ -250,22 +251,33 @@ table {
 }
 
 /* https://stackoverflow.com/questions/16265123/resize-svg-when-window-is-resized-in-d3-js*/
+
 .svg-container {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%; /* aspect ratio */
-  vertical-align: top;
-  overflow: hidden;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    /* aspect ratio */
+    vertical-align: top;
+    /*overflow: hidden;*/
+    /*margin: auto;*/
 }
 
 .svg-content-responsive {
-  display: inline-block;
-  position: absolute;
-  top: 10px;
-  left: 0;
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    top: 10px;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
+.svg {
+    margin: auto;
+    
+}
 
 /* *********************************************** /Main Section     */
 

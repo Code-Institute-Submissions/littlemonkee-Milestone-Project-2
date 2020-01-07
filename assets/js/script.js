@@ -91,11 +91,30 @@ function drawGraph() {
   var vis = d3.select("#draw-here")
     .append("svg:svg")
     .data([data])
+  .attr("preserveAspectRatio", "xMinYMin meet")
+  .attr("viewBox", "0 0 "+w+" "+h)
+  .classed("svg-content-responsive", true)
     .attr("width", w)
     .attr("height", h)
     .append("svg:g")
     .attr("transform", "translate(" + r + "," + r + ")");
-
+    
+    
+  // var vis = d3.select("#draw-here")
+  // .append("svg:svg")
+  // // Responsive SVG needs these 2 attributes and no width and height attr.
+  // .attr("preserveAspectRatio", "xMinYMin meet")
+  // .attr("viewBox", "0 0 "+w+" "+h)
+  // // Class to make it responsive.
+  // .classed("svg-content-responsive", true)
+  // // Fill with a rectangle for visualization.
+  // .append("rect")
+  // .classed("rect", true)
+  // .data([data])
+  // .attr("width", 400)
+  // .attr("height", 400)
+  // .append("svg:g")
+  // .attr("transform", "translate(" + r + "," + r + ")");  
 
   var arc = d3.arc() //this will create <path> elements for us using arc data
     .innerRadius(0)
