@@ -1,43 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-/* *********************************************** Scrollbar     */
-
-/* width */
-
-/*::-webkit-scrollbar {*/
-
-/*  width: 7px;*/
-
-/*}*/
-
-/* Track */
-
-/*::-webkit-scrollbar-track {*/
-
-/*  background: #f1f1f1;*/
-
-/*}*/
-
-/* Handle */
-
-/*::-webkit-scrollbar-thumb {*/
-
-/*  background: #888;*/
-
-/*}*/
-
-/* Handle on hover */
-
-/*::-webkit-scrollbar-thumb:hover {*/
-
-/*  background: #555;*/
-
-/*}*/
-
-/* *********************************************** /Scrollbar     */
-
-/* *********************************************** Main Section     */
 
 body {
     height: 100%;
@@ -46,14 +9,12 @@ body {
     overflow: hidden;
 }
 
-
 .btn {
     width: 100%;
     color: black;
     font-weight: bold;
     border: none;
     border-radius: 3px;
-    margin-top: 20px;
 }
 
 .buttons {
@@ -73,11 +34,30 @@ h2 {
     font-size: 3em;
 }
 
+input {
+    margin: 10px;
+}
+
 label {
     font-family: 'Poppins', serif;
     color: white;
     text-transform: uppercase;
 }
+
+p {
+    color: #000;
+}
+
+.row {
+    margin: 0;
+}
+
+table {
+    color: #fff;
+}
+
+/* *********************************************** Main Section     */
+
 
 .entry-button {
     margin-top: 40px;
@@ -144,9 +124,8 @@ label {
 
 .crawl p {
     font-size: 2em;
-    line-height: 50px;
-    color: yellow;
     line-height: 150%;
+    color: yellow;
     z-index: 1;
 }
 
@@ -166,17 +145,26 @@ label {
     position: relative;
     width: 100%;
     min-height: 60vh;
-    top: -25px;
+    top: 0px;
     background-image: linear-gradient(0deg, transparent, black 75%);
     z-index: 1;
+    margin-top: 20px;
 }
 
-/* ******************************************************* Star Wars Crawler Text */
+/* ********************************************************************* /Star Wars Crawler Text */
 
-.middle {
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 20px;
+
+footer {
+    height: 150px;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.galaxy-button {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
     margin-bottom: 20px;
 }
 
@@ -185,41 +173,6 @@ label {
     margin-bottom: 20px;
     text-align: center;
     padding-top: 20px;
-}
-
-input {
-    margin: 10px;
-}
-
-.galaxy-button {
-    width: 100%;
-}
-
-footer {
-    height: 150px;
-    background-color: #fff;
-    z-index: 10;
-}
-
-p {
-    color: #000;
-}
-
-table {
-    color: #fff;
-}
-
-.row {
-    margin: 0;
-}
-
-
-.arc path {
-    stroke: #fff;
-}
-
-#draw-here {
-    padding-top: 50px;
 }
 
 #radios-legend {
@@ -234,16 +187,20 @@ table {
 }
 
 
-.svg:text {
-    text-transform: uppercase;
+
+/* ******************************************************* Pie Chart */
+
+#draw-here {
+    padding-top: 50px;
 }
 
-/* https://stackoverflow.com/questions/16265123/resize-svg-when-window-is-resized-in-d3-js*/
+.arc path {
+    stroke: #fff;
+}
 
 .svg-container {
     display: inline-block;
     position: relative;
-    /*width: 100%;*/
     padding-bottom: 10%;
     vertical-align: top;
     max-height: 500px;
@@ -255,7 +212,6 @@ table {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .svg {
@@ -263,9 +219,11 @@ table {
 
 }
 
-/* *********************************************** /Main Section     */
+/* ******************************************************* Pie Chart */
 
-/*------------------------------------------Media Queries */
+/* ****************************************************************** /Main Section     */
+
+/* ****************************************************************** Media Queries */
 
 @media screen and (max-width: 320px) {
     #radios-legend {
@@ -278,7 +236,12 @@ table {
         width: 230px;
         height: 230px;
     }
-
+    .star-wars {
+        font-size: 200%;
+        font-weight: 400;
+        letter-spacing: 4px;
+        line-height: 110%;
+    }
 
 }
 
@@ -292,6 +255,12 @@ table {
     .svg-content-responsive {
         width: 280px;
         height: 280px;
+    }
+    .star-wars {
+        font-size: 250%;
+        font-weight: 400;
+        letter-spacing: 5px;
+        line-height: 120%;
     }
 
 }
@@ -307,6 +276,12 @@ table {
         width: 350px;
         height: 350px;
     }
+    .star-wars {
+        font-size: 300%;
+        font-weight: 400;
+        letter-spacing: 5px;
+        line-height: 140%;
+    }
 
 }
 
@@ -321,19 +296,15 @@ table {
         width: 320px;
         height: 320px;
     }
+    .star-wars {
+        font-size: 300%;
+        font-weight: 400;
+        letter-spacing: 6px;
+        line-height: 140%;
+    }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
-    #radios-legend {
-        font-size: 22px;
-    }
-    .radio-inline {
-        font-size: 20px;
-    }
-
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
     #radios-legend {
         font-size: 24px;
     }
@@ -342,6 +313,15 @@ table {
     }
     #draw-here {
         padding-top: 20px;
+    }
+    .star-wars {
+        font-size: 300%;
+        font-weight: 400;
+        letter-spacing: 6px;
+        line-height: 140%;
+    }
+    h1 {
+        font-size: 5vw;
     }
 }
 

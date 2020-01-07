@@ -38,9 +38,6 @@ function dataSelection(type) {
         var optionObject1 = myData.results;
         var text = [];
 
-        // var optionObject2 = data.count;
-        // var optionObject3 = data;
-
         for (var i = 0; i < optionObject1.length; i++) { // GET ALL PERSON RESULTS FROM  EACH PAGE OF THE API
 
           var obj = optionObject1[i]; // THE 'PERSON' AND THEIR ASSOCIATED ATTRIBUTES
@@ -48,7 +45,7 @@ function dataSelection(type) {
           for (var j = 0; j < optionObject1[i]["films"].length; j++) { // LOOP THROUGH EACH FILM ASSOCIATED WITH THE PERSON
 
             var film = optionObject1[i]["films"][j];
-            //    console.log(film);
+
             var filmNo = film.charAt(film.length - 2);
 
             if (filmChosen === filmNo) {
@@ -66,9 +63,7 @@ function dataSelection(type) {
           }
         }
         results1 = [{ "type": "male", "number": male }, { "type": "female", "number": female }, { "type": "other", "number": other }];
-        // console.log(results);
-        // console.log(typeof(results));
-        //return results1;
+
         drawGraph();
       });
 
@@ -77,17 +72,17 @@ function dataSelection(type) {
 }
 
 
-
 function drawGraph() {
   d3.select("svg").remove();
 
   var w = 400, //width
     h = 400, //height
     r = 200, //radius
-    color = d3.scale.category20c(); //builtin range of colors
+    color = d3.scale.category20c(); //built-in range of colors
 
   var data = results1;
 
+// http://thenewcode.com/744/Make-SVG-Responsive
   var vis = d3.select("#draw-here")
     .append("svg:svg")
     .data([data])
@@ -106,8 +101,6 @@ function drawGraph() {
 
   var pie = d3.layout.pie() //this will create arc data for us given a list of values
     .value(function(d) { return d.number; }); //we must tell it to access the value of each element in our data array
-
-  //var pie = d3.pie().sort(null).value(function(d) { return d.number; })(data);
 
   var arcs = vis.selectAll("g.slice") //this selects all <g> elements with class slice (there aren't any yet)
     .data(pie) //associate the generated pie data (an array of arcs, each having startAngle, endAngle and value properties) 
