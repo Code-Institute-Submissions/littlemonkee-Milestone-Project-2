@@ -58,7 +58,6 @@ table {
 
 /* *********************************************** Main Section     */
 
-
 .entry-button {
     margin-top: 40px;
 }
@@ -116,7 +115,6 @@ table {
 
 .crawl {
     position: relative;
-    /*top: -100px;*/
     top: 9999px;
     transform-origin: 50% 100%;
     animation: crawl 40s linear;
@@ -131,9 +129,8 @@ table {
 
 @keyframes crawl {
     0% {
-
-        top: 0;
-        transform: rotateX(20deg) translateZ(0);
+        top: -10px;
+        transform: rotateX(30deg) translateZ(0);
     }
     100% {
         top: -6000px;
@@ -152,7 +149,6 @@ table {
 }
 
 /* ********************************************************************* /Star Wars Crawler Text */
-
 
 footer {
     height: 150px;
@@ -237,11 +233,19 @@ footer {
         height: 230px;
     }
     .star-wars {
+        perspective: 300px;
         font-size: 200%;
         font-weight: 400;
-        letter-spacing: 4px;
+        letter-spacing: 3px;
         line-height: 110%;
     }
+    .crawl p {
+        font-size: 50px;
+        line-height: 150%;
+        color: yellow;
+        z-index: 1;
+    }
+
 
 }
 
@@ -257,10 +261,17 @@ footer {
         height: 280px;
     }
     .star-wars {
+        perspective: 325px;
         font-size: 250%;
         font-weight: 400;
         letter-spacing: 5px;
         line-height: 120%;
+    }
+    .crawl p {
+        font-size: 50px;
+        line-height: 150%;
+        color: yellow;
+        z-index: 1;
     }
 
 }
@@ -277,10 +288,17 @@ footer {
         height: 350px;
     }
     .star-wars {
+        perspective: 380px;
         font-size: 300%;
         font-weight: 400;
         letter-spacing: 5px;
         line-height: 140%;
+    }
+    .crawl p {
+        font-size: 50px;
+        line-height: 150%;
+        color: yellow;
+        z-index: 1;
     }
 
 }
@@ -301,6 +319,12 @@ footer {
         font-weight: 400;
         letter-spacing: 6px;
         line-height: 140%;
+    }
+    .crawl p {
+        font-size: 1.5em;
+        line-height: 150%;
+        color: yellow;
+        z-index: 1;
     }
 }
 

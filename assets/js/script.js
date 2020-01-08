@@ -31,7 +31,7 @@ function dataSelection(type) {
     }
   }
 
-  for (i = 1; i < 11; i++) { // NUMBER OF TIMES TO ITERATE WRT NUMBER OF PAGES
+  for (i = 1; i < 10; i++) { // NUMBER OF TIMES TO ITERATE WRT NUMBER OF PAGES
 
     fetchData(type + "/?page=" + i, function(myData) // GET SELECTED DATA FROM API FOR SPECIFIED PAGE
       {
